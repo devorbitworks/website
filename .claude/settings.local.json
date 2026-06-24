@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /Users/buhee/Skills/ && ls -la /Users/buhee/Skills/website/)",
+      "Read(//Users/buhee/Skills/**)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(find /usr /opt /Users/buhee -name \"node\" -type f 2>/dev/null | head -5; ls /usr/local/bin/ 2>/dev/null | head -20)",
+      "Read(//usr/**)",
+      "Read(//usr/local/**)",
+      "Read(//Users/buhee/**)",
+      "Bash(brew --prefix)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(brew install *)",
+      "Bash(/opt/homebrew/bin/node --version)",
+      "Bash(/opt/homebrew/bin/npm --version)",
+      "Bash(/opt/homebrew/bin/npx --version)",
+      "Bash(/opt/homebrew/bin/npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(NODE_TLS_REJECT_UNAUTHORIZED=0 /opt/homebrew/bin/npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(/opt/homebrew/bin/npm config *)"
+    ]
+  }
+}
