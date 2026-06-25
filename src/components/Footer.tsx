@@ -22,7 +22,7 @@ export default function Footer({ variant = "landing" }: { variant?: FooterVarian
           </div>
           <div style={{ fontSize: 14, color: "rgba(255,255,255,.9)", lineHeight: 1.95 }}>
             <p style={{ margin: 0 }}>주식회사 가디언링크 (Guardian Link Inc.)</p>
-            <p style={{ margin: 0 }}>대표자 : 이부희 &nbsp;|&nbsp; 사업자등록번호 : 215-87-89699</p>
+            <p style={{ margin: 0 }}>대표자 : 이부희 &nbsp;|&nbsp; 사업자등록번호 : 441-81-03721</p>
             {isAbout ? (
               <>
                 <p style={{ margin: 0 }}>본사 : 서울특별시 관악구 양녕로1길 36, 1동 B1F Q7</p>
