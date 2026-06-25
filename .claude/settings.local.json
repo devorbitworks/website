@@ -16,7 +16,19 @@
       "Bash(/opt/homebrew/bin/npx --version)",
       "Bash(/opt/homebrew/bin/npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
       "Bash(NODE_TLS_REJECT_UNAUTHORIZED=0 /opt/homebrew/bin/npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
-      "Bash(/opt/homebrew/bin/npm config *)"
+      "Bash(/opt/homebrew/bin/npm config *)",
+      "Bash(screencapture -x /private/tmp/landing_chrome.png)",
+      "Bash(screencapture -D 1 /private/tmp/landing_chrome.png)",
+      "Bash(screencapture /private/tmp/landing_chrome.png)",
+      "Bash(osascript)",
+      "Bash(screencapture -D 1 /private/tmp/site1.png)",
+      "Bash(screencapture -x /private/tmp/site_landing.png)",
+      "Bash(screencapture -x /private/tmp/site_mid.png)",
+      "Bash(screencapture -x /private/tmp/site_about.png)",
+      "Bash(screencapture -x /private/tmp/site_contact.png)",
+      "Bash(curl -s -X POST http://localhost:3000/api/contact -H 'Content-Type: application/json' -d '{\"company\":\"테스트회사\",\"phone\":\"010-1234-5678\",\"units\":\"3\",\"consult\":\"전화 상담\"}')",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/about)",
+      "Bash(screencapture -x /private/tmp/about_updated.png)"
     ]
   }
 }
