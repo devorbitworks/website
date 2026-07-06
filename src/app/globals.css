@@ -67,6 +67,32 @@ html { scroll-behavior: smooth; }
   .case-inner { padding: 0 20px !important; }
   .case-card { padding: 28px 20px !important; }
 
+  /* About Hero */
+  .about-hero-inner { padding: 0 20px !important; }
+  .about-hero-h1 { font-size: 32px !important; }
+  .about-hero-watermark { font-size: 72px !important; }
+  .about-hero-img-wrap { height: 300px !important; }
+  .about-overlay { left: 16px !important; right: 16px !important; bottom: 16px !important; padding: 20px !important; }
+
+  /* Mission */
+  .mission-section { padding: 56px 0 !important; }
+  .mission-inner { padding: 0 20px !important; }
+  .mission-h2 { font-size: 28px !important; }
+  .mission-grid { grid-template-columns: 1fr !important; }
+
+  /* Vision */
+  .vision-section { padding: 56px 0 !important; }
+  .vision-inner { padding: 0 20px !important; }
+  .vision-h2 { font-size: 28px !important; }
+  .vision-grid { grid-template-columns: 1fr !important; }
+
+  /* Values */
+  .values-section { padding: 56px 0 !important; }
+  .values-inner { padding: 0 20px !important; }
+  .values-h2 { font-size: 28px !important; }
+  .values-cards { flex-direction: column !important; align-items: stretch !important; }
+  .values-card { width: 100% !important; }
+
   /* CTA */
   .cta-section { padding: 56px 0 !important; }
   .cta-grid { grid-template-columns: 1fr !important; padding: 0 20px !important; gap: 32px !important; }

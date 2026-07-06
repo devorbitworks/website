@@ -1,16 +1,16 @@
 export default function MissionSection() {
   return (
-    <section style={{ background: "#fff", padding: "104px 0" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
+    <section className="mission-section" style={{ background: "#fff", padding: "104px 0" }}>
+      <div className="mission-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 56 }}>
           <span style={{ display: "inline-block", fontSize: 15, fontWeight: 800, color: "#0AC3C4", letterSpacing: ".08em", marginBottom: 14 }}>미션</span>
-          <h2 style={{ fontSize: 40, fontWeight: 800, letterSpacing: "-.03em", margin: "0 0 16px", color: "#161616" }}>현장을 혁신하고, 업무를 가볍게</h2>
+          <h2 className="mission-h2" style={{ fontSize: 40, fontWeight: 800, letterSpacing: "-.03em", margin: "0 0 16px", color: "#161616" }}>현장을 혁신하고, 업무를 가볍게</h2>
           <p style={{ fontSize: 18, color: "#565A61", margin: "0 auto", maxWidth: 680, lineHeight: 1.6 }}>
             가디언링크는 현장과 관리회사의 복잡함을 단순하게, 업무의 무게를 가볍게 만들어 갑니다.
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
+        <div className="mission-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
           {/* Card 1: 보라 */}
           <div style={{ background: "#F0EDFB", borderRadius: 24, padding: "44px 36px", minHeight: 280, display: "flex", flexDirection: "column" }}>
             <span style={{ width: 64, height: 64, borderRadius: 18, background: "#fff", display: "inline-flex", alignItems: "center", justifyContent: "center", marginBottom: 28, boxShadow: "0 2px 12px rgba(22,22,22,.08)" }}>

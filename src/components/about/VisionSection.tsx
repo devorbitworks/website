@@ -20,11 +20,11 @@ const visionCards = [
 
 export default function VisionSection() {
   return (
-    <section id="vision" style={{ background: "#161616", padding: "104px 0" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
+    <section id="vision" className="vision-section" style={{ background: "#161616", padding: "104px 0" }}>
+      <div className="vision-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 56 }}>
           <span style={{ display: "inline-block", fontSize: 15, fontWeight: 800, color: "#4FE0E0", letterSpacing: ".08em", marginBottom: 14 }}>비전</span>
-          <h2 style={{ fontSize: 40, fontWeight: 800, letterSpacing: "-.03em", margin: "0 0 16px", color: "#fff" }}>
+          <h2 className="vision-h2" style={{ fontSize: 40, fontWeight: 800, letterSpacing: "-.03em", margin: "0 0 16px", color: "#fff" }}>
             현장 용역 관리의 새로운 기준을 세우다
           </h2>
           <p style={{ fontSize: 18, color: "#9DA3AB", margin: "0 auto", maxWidth: 720, lineHeight: 1.6 }}>
@@ -32,7 +32,7 @@ export default function VisionSection() {
           </p>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
+        <div className="vision-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 24 }}>
           {visionCards.map((card) => (
             <div key={card.title} style={{ borderRadius: 24, overflow: "hidden", background: "#1F2123", border: "1px solid #2A2D30" }}>
               <div style={{ position: "relative", width: "100%", height: 220 }}>
