@@ -19,8 +19,8 @@ export default function ROISection() {
   const saveMan = Math.round(beforeMan * SAVINGS_RATE);
 
   return (
-    <section style={{ background: "#fff", padding: "96px 0" }}>
-      <div style={{ maxWidth: 920, margin: "0 auto", padding: "0 32px" }}>
+    <section className="roi-section" style={{ background: "#fff", padding: "96px 0" }}>
+      <div className="roi-inner" style={{ maxWidth: 920, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 44 }}>
           <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: "0 0 12px", color: "#161616" }}>
             도입 시 비용 절감 효과
@@ -30,7 +30,7 @@ export default function ROISection() {
           </p>
         </div>
 
-        <div style={{ background: "#FAFAFA", border: "1px solid #E4E6E8", borderRadius: 16, padding: 40 }}>
+        <div className="roi-box" style={{ background: "#FAFAFA", border: "1px solid #E4E6E8", borderRadius: 16, padding: 40 }}>
           {/* Slider header */}
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 14 }}>
             <span style={{ fontSize: 16, fontWeight: 700, color: "#404347" }}>관리인력 수</span>
@@ -49,7 +49,7 @@ export default function ROISection() {
           />
 
           {/* Result cards */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+          <div className="roi-cards" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
             <div style={{ background: "#fff", border: "1px solid #E4E6E8", borderRadius: 12, padding: 26 }}>
               <p style={{ margin: "0 0 10px", fontSize: 15, fontWeight: 700, color: "#71767D" }}>도입 전 연 인건비</p>
               <p style={{ margin: 0, fontSize: 34, fontWeight: 800, color: "#565A61", letterSpacing: "-.02em" }}>{fmt(beforeMan)}</p>

@@ -11,15 +11,16 @@ const rows = [
 
 export default function BeforeAfterSection() {
   return (
-    <section id="effects" style={{ background: "#fff", padding: "96px 0" }}>
-      <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 32px" }}>
+    <section id="effects" className="ba-section" style={{ background: "#fff", padding: "96px 0" }}>
+      <div className="ba-inner" style={{ maxWidth: 1080, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: 0, color: "#161616" }}>
             오빗웍스 도입 전 vs 도입 후
           </h2>
         </div>
 
-        <div style={{ border: "1px solid #E4E6E8", borderRadius: 16, overflow: "hidden", boxShadow: "0 2px 12px rgba(22,22,22,.06)" }}>
+        <div className="ba-scroll">
+        <div style={{ border: "1px solid #E4E6E8", borderRadius: 16, overflow: "hidden", boxShadow: "0 2px 12px rgba(22,22,22,.06)", minWidth: 500 }}>
           {/* Header */}
           <div style={{ display: "grid", gridTemplateColumns: "1.1fr 1.4fr 1.4fr", background: "#161616" }}>
             <div style={{ padding: "18px 24px", fontSize: 15, fontWeight: 700, color: "#9DA3AB" }}>구분</div>
@@ -33,6 +34,7 @@ export default function BeforeAfterSection() {
               <div style={{ padding: "20px 24px", fontSize: 16, fontWeight: 600, color: "#161616" }}>{row.after}</div>
             </div>
           ))}
+        </div>
         </div>
 
         {/* Real screen */}

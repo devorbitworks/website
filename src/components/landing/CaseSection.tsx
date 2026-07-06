@@ -1,14 +1,14 @@
 export default function CaseSection() {
   return (
-    <section id="cases" style={{ background: "#FAFAFA", padding: "96px 0" }}>
-      <div style={{ maxWidth: 920, margin: "0 auto", padding: "0 32px" }}>
+    <section id="cases" className="case-section" style={{ background: "#FAFAFA", padding: "96px 0" }}>
+      <div className="case-inner" style={{ maxWidth: 920, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 44 }}>
           <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: 0, color: "#161616" }}>
             현재 도입 고객사
           </h2>
         </div>
 
-        <div style={{ background: "#fff", border: "1px solid #E4E6E8", borderRadius: 16, padding: 44, boxShadow: "0 4px 20px rgba(22,22,22,.08)" }}>
+        <div className="case-card" style={{ background: "#fff", border: "1px solid #E4E6E8", borderRadius: 16, padding: 44, boxShadow: "0 4px 20px rgba(22,22,22,.08)" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 24, flexWrap: "wrap" }}>
             <span style={{ width: 56, height: 56, borderRadius: 14, background: "#E0F7F7", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 20, fontWeight: 800, color: "#07898A", flexShrink: 0 }}>
               EMP

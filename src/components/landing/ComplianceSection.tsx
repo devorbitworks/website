@@ -9,15 +9,15 @@ const CheckIcon = () => (
 
 export default function ComplianceSection() {
   return (
-    <section style={{ background: "#FAFAFA", padding: "96px 0" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
+    <section className="compliance-section" style={{ background: "#FAFAFA", padding: "96px 0" }}>
+      <div className="compliance-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
           <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: 0, color: "#161616" }}>
             법규 위반 리스크, 시스템으로 자동 차단
           </h2>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
+        <div className="compliance-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24 }}>
           {/* 경비업법 */}
           <div style={{ background: "#fff", border: "1px solid #E4E6E8", borderRadius: 16, padding: 36, boxShadow: "0 2px 12px rgba(22,22,22,.06)" }}>
             <span style={{ display: "inline-block", fontSize: 13, fontWeight: 800, color: "#71767D", letterSpacing: ".04em", marginBottom: 6 }}>경비업법</span>

@@ -8,8 +8,8 @@ const steps = [
 
 export default function ProcessSection() {
   return (
-    <section style={{ background: "#fff", padding: "96px 0" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
+    <section className="process-section" style={{ background: "#fff", padding: "96px 0" }}>
+      <div className="process-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 56 }}>
           <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: "0 0 12px", color: "#161616" }}>
             오빗웍스 도입은 이렇게 진행됩니다
@@ -17,9 +17,9 @@ export default function ProcessSection() {
           <p style={{ fontSize: 18, color: "#565A61", margin: 0 }}>빠르면 1~2주 내 정식 운영이 가능합니다</p>
         </div>
 
-        <div style={{ position: "relative", display: "grid", gridTemplateColumns: "repeat(5,1fr)", gap: 16 }}>
+        <div className="process-grid" style={{ position: "relative", display: "grid", gridTemplateColumns: "repeat(5,1fr)", gap: 16 }}>
           {/* Connecting line */}
-          <div style={{ position: "absolute", top: 26, left: "10%", right: "10%", height: 2, background: "#E4E6E8" }} />
+          <div className="process-line" style={{ position: "absolute", top: 26, left: "10%", right: "10%", height: 2, background: "#E4E6E8" }} />
 
           {steps.map((step) => {
             const circleStyle: React.CSSProperties =

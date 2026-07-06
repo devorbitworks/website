@@ -42,8 +42,8 @@ export default function FeaturesSection() {
   const fd = featData[featTab];
 
   return (
-    <section id="features" style={{ background: "#FAFAFA", padding: "96px 0" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
+    <section id="features" className="feat-section" style={{ background: "#FAFAFA", padding: "96px 0" }}>
+      <div className="feat-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 40 }}>
           <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: 0, color: "#161616" }}>
             핵심 기능 구조
@@ -59,7 +59,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Cards: 4 columns */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
+        <div className="feat-cards" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
           {fd.cards.map((f) => (
             <div key={f.t} style={{ background: "#fff", border: "1px solid #E4E6E8", borderRadius: 16, padding: "28px 24px", boxShadow: "0 2px 4px rgba(22,22,22,.04)" }}>
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 18 }}>
@@ -77,7 +77,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Real screens */}
-        <div style={{ marginTop: 52, display: "grid", gridTemplateColumns: "1.7fr 1fr", gap: 32, alignItems: "start" }}>
+        <div className="feat-screens" style={{ marginTop: 52, display: "grid", gridTemplateColumns: "1.7fr 1fr", gap: 32, alignItems: "start" }}>
           {/* Browser: 계약관리 */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
@@ -96,7 +96,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Phone: 근무조회 */}
-          <div>
+          <div className="feat-phone">
             <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 14 }}>
               <span style={{ padding: "4px 11px", borderRadius: 1000, background: "#F2F3F4", color: "#71767D", fontSize: 12, fontWeight: 800 }}>현장 APP</span>
               <span style={{ fontSize: 15, color: "#565A61", fontWeight: 600 }}>근무 조회</span>

@@ -1,14 +1,14 @@
 export default function WhySection() {
   return (
-    <section style={{ background: "#fff", padding: "96px 0" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
+    <section className="why-section" style={{ background: "#fff", padding: "96px 0" }}>
+      <div className="why-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 48 }}>
-          <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: 0, color: "#161616" }}>
+          <h2 className="why-h2" style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: 0, color: "#161616" }}>
             시중 ERP, 왜 현장에서 결국 안 쓰게 될까요?
           </h2>
         </div>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 24, alignItems: "stretch" }}>
+        <div className="why-grid" style={{ display: "grid", gridTemplateColumns: "1fr auto 1fr", gap: 24, alignItems: "stretch" }}>
           {/* Left */}
           <div style={{ border: "1px solid #E4E6E8", borderRadius: 16, padding: "36px 32px", background: "#FAFAFA" }}>
             <span style={{ display: "inline-block", fontSize: 13, fontWeight: 800, color: "#9DA3AB", letterSpacing: ".06em", marginBottom: 8 }}>유형 1</span>
@@ -21,7 +21,7 @@ export default function WhySection() {
           </div>
 
           {/* OR */}
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div className="why-or" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <span style={{ width: 52, height: 52, borderRadius: "50%", background: "#161616", color: "#fff", fontSize: 16, fontWeight: 800, display: "flex", alignItems: "center", justifyContent: "center" }}>OR</span>
           </div>
 
@@ -38,7 +38,7 @@ export default function WhySection() {
         </div>
 
         {/* Dark banner */}
-        <div style={{ marginTop: 24, background: "#878D92", borderRadius: 16, padding: 40, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 32, flexWrap: "wrap", boxShadow: "0 4px 20px rgba(22,22,22,.15)" }}>
+        <div className="why-banner" style={{ marginTop: 24, background: "#878D92", borderRadius: 16, padding: 40, display: "flex", alignItems: "center", justifyContent: "space-between", gap: 32, flexWrap: "wrap", boxShadow: "0 4px 20px rgba(22,22,22,.15)" }}>
           <div style={{ maxWidth: 420 }}>
             <span style={{ display: "inline-block", padding: "5px 12px", borderRadius: 1000, background: "rgba(10,195,196,.18)", color: "#4FE0E0", fontSize: 13, fontWeight: 800, marginBottom: 14 }}>
               답은 오빗웍스
@@ -47,7 +47,7 @@ export default function WhySection() {
               필요한 기능은 다 있고,<br />사용법은 단순하다
             </h3>
           </div>
-          <div style={{ display: "flex", gap: 14, flex: 1, minWidth: 420 }}>
+          <div className="why-banner-cards" style={{ display: "flex", gap: 14, flex: 1, minWidth: 420 }}>
             {["경비·미화·시설 용역 전용 기능", "첫 로그인 후 바로 쓰는 UI", "도입 후 포기 없는 구조"].map((text) => (
               <div key={text} style={{ flex: 1, background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.1)", borderRadius: 12, padding: 18, fontSize: 15, fontWeight: 600, color: "#fff", lineHeight: 1.5 }}>
                 {text}

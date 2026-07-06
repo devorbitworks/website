@@ -45,20 +45,20 @@ export default function PainPointSection() {
   const cards = painData[activeTab];
 
   return (
-    <section style={{ background: "#FAFAFA", padding: "96px 0" }}>
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
+    <section className="pain-section" style={{ background: "#FAFAFA", padding: "96px 0" }}>
+      <div className="pain-inner" style={{ maxWidth: 1280, margin: "0 auto", padding: "0 32px" }}>
         <div style={{ textAlign: "center", marginBottom: 40 }}>
-          <h2 style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: "0 0 12px", color: "#161616" }}>
+          <h2 className="pain-h2" style={{ fontSize: 36, fontWeight: 800, letterSpacing: "-.025em", margin: "0 0 12px", color: "#161616" }}>
             이런 어려움, 매일 반복되고 있지 않으신가요?
           </h2>
-          <p style={{ fontSize: 18, color: "#565A61", margin: 0 }}>
+          <p className="pain-sub" style={{ fontSize: 18, color: "#565A61", margin: 0 }}>
             경비·미화·시설 용역 현장의 고질적인 관리 비효율
           </p>
         </div>
 
         {/* Tab pills */}
         <div style={{ display: "flex", justifyContent: "center", marginBottom: 40 }}>
-          <div style={{ display: "flex", gap: 4, background: "#fff", border: "1px solid #E4E6E8", borderRadius: 1000, padding: 5 }}>
+          <div className="pain-tabs-wrap" style={{ display: "flex", gap: 4, background: "#fff", border: "1px solid #E4E6E8", borderRadius: 1000, padding: 5 }}>
             {tabs.map((tab) => (
               <button key={tab} onClick={() => setActiveTab(tab)} style={tabStyle(activeTab === tab)}>
                 {tab}
@@ -68,7 +68,7 @@ export default function PainPointSection() {
         </div>
 
         {/* 4-column cards */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
+        <div className="pain-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 20 }}>
           {cards.map((text, i) => (
             <div key={i} style={{ background: "#fff", border: "1px solid #E4E6E8", borderRadius: 16, padding: "28px 24px", display: "flex", flexDirection: "column", gap: 16, minHeight: 184, boxShadow: "0 2px 4px rgba(22,22,22,.04)" }}>
               <span style={{ fontSize: 14, fontWeight: 800, color: "#0AC3C4", letterSpacing: ".04em" }}>
