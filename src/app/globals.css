@@ -6,6 +6,22 @@ body { margin: 0; }
 input[type=range] { accent-color: #0AC3C4; }
 html { scroll-behavior: smooth; }
 
+@media (max-width: 768px) {
+  .hero-section { padding: 48px 0 56px !important; }
+  .hero-grid { grid-template-columns: 1fr !important; padding: 0 20px !important; }
+  .hero-h1 { font-size: 34px !important; }
+  .hero-sub { font-size: 15px !important; }
+  .hero-mockup { display: none !important; }
+  .hero-buttons { flex-direction: column !important; }
+  .hero-buttons a { text-align: center; }
+
+  .cta-section { padding: 56px 0 !important; }
+  .cta-grid { grid-template-columns: 1fr !important; padding: 0 20px !important; gap: 32px !important; }
+  .cta-h2 { font-size: 28px !important; margin-bottom: 20px !important; }
+  .cta-buttons { flex-direction: column !important; }
+  .cta-buttons a { text-align: center; }
+}
+
 @keyframes gl-float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-16px); }

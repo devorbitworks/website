@@ -44,14 +44,14 @@ export default function CTASection() {
   }
 
   return (
-    <section id="contact" style={{ background: "#E2E6E9", padding: "96px 0" }}>
-      <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 32px", display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 56, alignItems: "center" }}>
+    <section id="contact" className="cta-section" style={{ background: "#E2E6E9", padding: "96px 0" }}>
+      <div className="cta-grid" style={{ maxWidth: 1080, margin: "0 auto", padding: "0 32px", display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 56, alignItems: "center" }}>
         {/* Left */}
         <div>
-          <h2 style={{ fontSize: 38, lineHeight: 1.32, fontWeight: 800, letterSpacing: "-.025em", color: "#161616", margin: "0 0 28px" }}>
+          <h2 className="cta-h2" style={{ fontSize: 38, lineHeight: 1.32, fontWeight: 800, letterSpacing: "-.025em", color: "#161616", margin: "0 0 28px" }}>
             현장 용역 관리의<br />새로운 기준,<br />오빗웍스와 함께 시작하세요
           </h2>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <div className="cta-buttons" style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <a href="#contact" style={{ padding: "15px 26px", borderRadius: 8, background: "#0AC3C4", color: "#fff", fontSize: 17, fontWeight: 700, textDecoration: "none", boxShadow: "0 4px 20px rgba(10,195,196,.35)", fontFamily: "inherit" }}>
               도입 상담 신청 →
             </a>
