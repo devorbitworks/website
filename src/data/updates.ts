@@ -20,9 +20,6 @@ export const updates: UpdateEntry[] = [
     title: "오빗웍스 서비스 정식 출시",
     tag: "공지",
     items: [
-      "계약관리, 단지관리, 문서관리, 인사관리 기능 제공",
-      "앱(근태관리, 순찰관리) 베타 운영 시작",
-      "웹 대시보드 정식 오픈",
       // 링크 예시:
       // { type: "link", label: "서비스 소개서 보기", url: "https://..." },
       // 이미지 예시 (public/ 폴더에 파일 넣고):
