@@ -16,9 +16,9 @@ export default function Footer({ variant = "landing" }: { variant?: FooterVarian
         {/* Info */}
         <div>
           <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 18 }}>
-            <a href="https://app.gitbook.com/o/m9zavSZx81uyDempcgd3/s/oPJ18VBH94vIKTCALOAJ/undefined-3/undefined-1" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", textDecoration: "none", fontWeight: 700 }}>개인정보처리방침</a>
+            <a href="https://orbitworks.gitbook.io/orbitworks-docs/undefined-3/undefined-1" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", textDecoration: "none", fontWeight: 700 }}>개인정보처리방침</a>
             <span style={{ width: 1, height: 13, background: "rgba(255,255,255,.45)" }} />
-            <a href="https://app.gitbook.com/o/m9zavSZx81uyDempcgd3/s/oPJ18VBH94vIKTCALOAJ/undefined-3/undefined" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", textDecoration: "none", fontWeight: 700 }}>이용약관</a>
+            <a href="https://orbitworks.gitbook.io/orbitworks-docs/undefined-3/undefined" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", textDecoration: "none", fontWeight: 700 }}>이용약관</a>
           </div>
           <div style={{ fontSize: 14, color: "rgba(255,255,255,.9)", lineHeight: 1.95 }}>
             <p style={{ margin: 0 }}>주식회사 가디언링크 (Guardian Link Inc.)</p>

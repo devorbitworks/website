@@ -8,9 +8,9 @@ export default function FooterAbout() {
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 24, flexWrap: "wrap", marginBottom: 24 }}>
           <Image src="/guardianlink-logo-white.png" alt="Guardianlink" width={160} height={30} style={{ height: 30, width: "auto", display: "block" }} />
           <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-            <a href="https://app.gitbook.com/o/m9zavSZx81uyDempcgd3/s/oPJ18VBH94vIKTCALOAJ/undefined-3/undefined-1" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", fontWeight: 700, textDecoration: "none" }}>개인정보수집방침</a>
+            <a href="https://orbitworks.gitbook.io/orbitworks-docs/undefined-3/undefined-1" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", fontWeight: 700, textDecoration: "none" }}>개인정보수집방침</a>
             <span style={{ width: 1, height: 13, background: "rgba(255,255,255,.45)" }} />
-            <a href="https://app.gitbook.com/o/m9zavSZx81uyDempcgd3/s/oPJ18VBH94vIKTCALOAJ/undefined-3/undefined" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", fontWeight: 700, textDecoration: "none" }}>이용약관</a>
+            <a href="https://orbitworks.gitbook.io/orbitworks-docs/undefined-3/undefined" target="_blank" rel="noopener noreferrer" style={{ fontSize: 15, color: "#fff", fontWeight: 700, textDecoration: "none" }}>이용약관</a>
           </div>
         </div>
 
