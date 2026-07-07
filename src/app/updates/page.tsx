@@ -1,6 +1,34 @@
 import GNB from "@/components/GNB";
 import Footer from "@/components/Footer";
-import { updates, UpdateTag } from "@/data/updates";
+import Image from "next/image";
+import { updates, UpdateTag, UpdateItem } from "@/data/updates";
+
+function renderItem(item: UpdateItem, j: number) {
+  if (typeof item === "string") {
+    return (
+      <li key={j} style={{ fontSize: 15, color: "#404347", lineHeight: 1.65 }}>{item}</li>
+    );
+  }
+  if (item.type === "link") {
+    return (
+      <li key={j} style={{ fontSize: 15, lineHeight: 1.65, listStyle: "none", marginLeft: -18 }}>
+        <a href={item.url} target="_blank" rel="noopener noreferrer"
+          style={{ color: "#0AC3C4", fontWeight: 600, textDecoration: "underline", textUnderlineOffset: 3 }}>
+          {item.label} →
+        </a>
+      </li>
+    );
+  }
+  if (item.type === "image") {
+    return (
+      <li key={j} style={{ listStyle: "none", marginLeft: -18, marginTop: 8 }}>
+        <div style={{ position: "relative", width: "100%", borderRadius: 12, overflow: "hidden", border: "1px solid #E4E6E8" }}>
+          <Image src={item.src} alt={item.alt ?? ""} width={720} height={400} style={{ width: "100%", height: "auto", display: "block" }} />
+        </div>
+      </li>
+    );
+  }
+}
 
 const tagStyle: Record<UpdateTag, { bg: string; color: string }> = {
   "기능 추가": { bg: "#E0F7F7", color: "#07898A" },
@@ -63,9 +91,7 @@ export default function UpdatesPage() {
                     {entry.title}
                   </h2>
                   <ul style={{ margin: 0, padding: "0 0 0 18px", display: "flex", flexDirection: "column", gap: 8 }}>
-                    {entry.items.map((item, j) => (
-                      <li key={j} style={{ fontSize: 15, color: "#404347", lineHeight: 1.65 }}>{item}</li>
-                    ))}
+                    {entry.items.map((item, j) => renderItem(item, j))}
                   </ul>
                 </div>
               </div>
