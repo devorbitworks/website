@@ -33,6 +33,7 @@ export default function GNB({ variant = "landing" }: { variant?: GNBVariant }) {
               <Link href="#effects" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>도입효과</Link>
               <Link href="#cases" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>도입사례</Link>
               <Link href="#contact" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>도입문의</Link>
+              <Link href="/updates" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>업데이트</Link>
             </>
           ) : (
             <>
@@ -41,6 +42,7 @@ export default function GNB({ variant = "landing" }: { variant?: GNBVariant }) {
               <Link href="/#effects" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>도입효과</Link>
               <Link href="/#cases" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>도입사례</Link>
               <Link href="/#contact" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>도입문의</Link>
+              <Link href="/updates" style={{ fontSize: 16, fontWeight: 600, color: "#404347", textDecoration: "none" }}>업데이트</Link>
             </>
           )}
         </nav>
