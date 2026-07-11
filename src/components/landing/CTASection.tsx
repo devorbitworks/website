@@ -6,7 +6,9 @@ type Status = "idle" | "loading" | "success" | "error";
 
 export default function CTASection() {
   const [company, setCompany] = useState("");
+  const [manager, setManager] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const [units, setUnits] = useState("");
   const [consult, setConsult] = useState<ConsultType>("전화 상담");
   const [status, setStatus] = useState<Status>("idle");
@@ -23,13 +25,15 @@ export default function CTASection() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ company, phone, units, consult }),
+        body: JSON.stringify({ company, manager, phone, email, units, consult }),
       });
 
       if (res.ok) {
         setStatus("success");
         setCompany("");
+        setManager("");
         setPhone("");
+        setEmail("");
         setUnits("");
         setConsult("전화 상담");
       } else {
@@ -97,6 +101,17 @@ export default function CTASection() {
                 />
               </div>
               <div>
+                <label style={{ display: "block", fontSize: 14, fontWeight: 700, color: "#404347", marginBottom: 7 }}>담당자명</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="담당자 성함을 입력하세요"
+                  value={manager}
+                  onChange={(e) => setManager(e.target.value)}
+                  style={{ width: "100%", padding: "13px 14px", border: "1px solid #CDD2D8", borderRadius: 8, fontSize: 15, fontFamily: "inherit", color: "#161616", outline: "none", boxSizing: "border-box" }}
+                />
+              </div>
+              <div>
                 <label style={{ display: "block", fontSize: 14, fontWeight: 700, color: "#404347", marginBottom: 7 }}>연락처</label>
                 <input
                   type="text"
@@ -104,6 +119,17 @@ export default function CTASection() {
                   placeholder="010-0000-0000"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  style={{ width: "100%", padding: "13px 14px", border: "1px solid #CDD2D8", borderRadius: 8, fontSize: 15, fontFamily: "inherit", color: "#161616", outline: "none", boxSizing: "border-box" }}
+                />
+              </div>
+              <div>
+                <label style={{ display: "block", fontSize: 14, fontWeight: 700, color: "#404347", marginBottom: 7 }}>연락받을 이메일 주소</label>
+                <input
+                  type="email"
+                  required
+                  placeholder="email@company.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   style={{ width: "100%", padding: "13px 14px", border: "1px solid #CDD2D8", borderRadius: 8, fontSize: 15, fontFamily: "inherit", color: "#161616", outline: "none", boxSizing: "border-box" }}
                 />
               </div>
