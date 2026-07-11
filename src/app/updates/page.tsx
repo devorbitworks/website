@@ -1,6 +1,7 @@
 import GNB from "@/components/GNB";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import RoadmapSection from "@/components/RoadmapSection";
 import { updates, UpdateTag, UpdateItem } from "@/data/updates";
 
 function renderItem(item: UpdateItem, j: number) {
@@ -41,7 +42,7 @@ export default function UpdatesPage() {
   return (
     <>
       <GNB variant="landing" />
-      <main style={{ background: "#FAFAFA", minHeight: "100vh", padding: "80px 0 120px" }}>
+      <main style={{ background: "#FAFAFA", padding: "80px 0 0" }}>
         <div style={{ maxWidth: 760, margin: "0 auto", padding: "0 20px" }}>
           {/* Header */}
           <div style={{ marginBottom: 48 }}>
@@ -99,6 +100,7 @@ export default function UpdatesPage() {
           </div>
         </div>
       </main>
+      <RoadmapSection />
       <Footer variant="landing" />
     </>
   );

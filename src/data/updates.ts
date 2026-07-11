@@ -13,17 +13,4 @@ export interface UpdateEntry {
   items: UpdateItem[];
 }
 
-export const updates: UpdateEntry[] = [
-  {
-    version: "v1.0.0",
-    date: "2026-07-07",
-    title: "오빗웍스 서비스 정식 출시",
-    tag: "공지",
-    items: [
-      // 링크 예시:
-      // { type: "link", label: "서비스 소개서 보기", url: "https://..." },
-      // 이미지 예시 (public/ 폴더에 파일 넣고):
-      // { type: "image", src: "/update-screenshot.png", alt: "새 기능 화면" },
-    ],
-  },
-];
+export const updates: UpdateEntry[] = [];
