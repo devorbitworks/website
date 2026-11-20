@@ -1,13 +1,9 @@
-import type { MetadataRoute } from "next";
+import type { MetadataRoute } from 'next';
+import {canonicalSite,isProduction} from '@/lib/site';
 
 export default function robots(): MetadataRoute.Robots {
-  return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-    ],
-    sitemap: "https://www.orbitworks.co.kr/sitemap.xml",
-  };
+  return isProduction() ? {
+    rules: {userAgent:'*',allow:'/'},
+    sitemap: `${canonicalSite}/sitemap.xml`,
+  } : {rules:{userAgent:'*',disallow:'/'}};
 }

@@ -1,0 +1,9 @@
+{
+  "repository": "https://github.com/devorbitworks/website",
+  "baseCommit": "fd816705b729f88e28a0691e30e88d2333435b78",
+  "baseVersion": "0.1.0",
+  "targetVersion": "0.2.0",
+  "recipient": "buhee@orbitworks.co.kr",
+  "deliveryDefault": "disabled",
+  "sourceNote": "New implementation migrated into existing src structure; original verification assets are preserved."
+}

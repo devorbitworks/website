@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Guardian Link / Orbitworks website
 
-## Getting Started
+Version 0.2.0. Next.js 16.4.6 App Router, React 19.3.1 and TypeScript. The responsive site renders approved copy in HTML with local product assets and Pretendard. Routes: `/`, `/company`, `/business` and `/updates`; legacy `/about` redirects to `/company`.
 
-First, run the development server:
+## Local development and checks
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Use Node.js 22.18 or newer for the native TypeScript test runner.
+
+```sh
+npm ci
+NEXT_TELEMETRY_DISABLED=1 npm run dev -- --hostname 127.0.0.1
+NEXT_TELEMETRY_DISABLED=1 npm run build
+NEXT_TELEMETRY_DISABLED=1 npm run typecheck
+npm run lint
+npm test
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+No secrets are needed for local QA. Use synthetic contact details only. Local and preview builds are `noindex`; only `VERCEL_ENV=production` builds permit indexing. Keep canonical URLs on `https://www.orbitworks.co.kr`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Inquiry delivery
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Mail is off by default, including when Gmail credentials exist. `GET /api/inquiry` exposes only a `configured` boolean; it does not contact SMTP. `POST /api/inquiry` validates the active form and explicit consent. Disabled delivery returns `503`; SMTP rejection or failure returns `502`. The site shows success only after SMTP accepts the designated recipient, not as a guarantee of inbox delivery. Browser drafts remain in memory after failure. Legacy `/api/contact` accepts the previous Orbitworks field names but enforces the same consent, validation and delivery gate.
 
-## Learn More
+Only after separate approval to enable live intake: configure `GMAIL_USER` and `GMAIL_APP_PASSWORD` as production-only secrets, leave the recipient fixed to `buhee@orbitworks.co.kr`, and set `INQUIRY_DELIVERY_ENABLED=true` in Vercel Production only. The server also requires the platform's `VERCEL_ENV=production`; do not spoof it in local QA. To pause delivery, remove the flag or set it to `false`. Never commit an app password or put it in a `NEXT_PUBLIC_*` variable. No mail is sent by the test suite, which injects a stub transport.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See [migration notes](docs/renewal-v2/DEVELOPMENT_HANDOFF.md) and the [changelog](CHANGELOG.md).
