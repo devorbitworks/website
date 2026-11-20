@@ -26,10 +26,10 @@ export default function AboutHero() {
           {/* Overlay */}
           <div className="about-overlay" style={{ position: "absolute", left: 48, right: 48, bottom: 48, background: "rgba(255,255,255,0.94)", backdropFilter: "blur(6px)", WebkitBackdropFilter: "blur(6px)", borderRadius: 16, padding: "36px 40px", boxShadow: "0 4px 20px rgba(22,22,22,.15)", maxWidth: 680 }}>
             <p style={{ margin: "0 0 14px", fontSize: 17, lineHeight: 1.7, color: "#292B2D", fontWeight: 600 }}>
-              가디언링크(Guardian Link)는 지키는 사람·공간을 뜻하는 'Guardian'과 현장과 본사를 잇는 'Link'를 결합한 이름입니다.
+              가디언링크(Guardian Link)는 지키는 사람·공간을 뜻하는 &apos;Guardian&apos;과 현장과 본사를 잇는 &apos;Link&apos;를 결합한 이름입니다.
             </p>
             <p style={{ margin: 0, fontSize: 16, lineHeight: 1.75, color: "#565A61" }}>
-              'Guardian'은 안전하게 보호받는 현장을, 'Link'는 그 현장과 본사를 끊김 없이 연결하는 방법을 의미합니다. 이름처럼, 가디언링크는 고객이 믿고 의지할 수 있는 안정적이고 혁신적인 현장 관리 솔루션, <strong style={{ color: "#07898A", fontWeight: 700 }}>오빗웍스(orbitworks)</strong>를 제공합니다.
+              &apos;Guardian&apos;은 안전하게 보호받는 현장을, &apos;Link&apos;는 그 현장과 본사를 끊김 없이 연결하는 방법을 의미합니다. 이름처럼, 가디언링크는 고객이 믿고 의지할 수 있는 안정적이고 혁신적인 현장 관리 솔루션, <strong style={{ color: "#07898A", fontWeight: 700 }}>오빗웍스(orbitworks)</strong>를 제공합니다.
             </p>
           </div>
         </div>

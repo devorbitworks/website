@@ -26,7 +26,7 @@ export default function CaseSection() {
 
           <blockquote style={{ margin: 0, padding: "24px 0 0", borderTop: "1px solid #F2F3F4" }}>
             <p style={{ fontSize: 21, lineHeight: 1.65, fontWeight: 600, color: "#292B2D", margin: "0 0 18px", letterSpacing: "-.01em" }}>
-              "오빗웍스는 현재 일부 기능만 사용 중임에도 실무자와 관리자 모두가 편리하다는 반응입니다. 기능이 추가되고 완성도가 높아질수록 가장 실용적인 솔루션이 될 것으로 기대합니다."
+              &quot;오빗웍스는 현재 일부 기능만 사용 중임에도 실무자와 관리자 모두가 편리하다는 반응입니다. 기능이 추가되고 완성도가 높아질수록 가장 실용적인 솔루션이 될 것으로 기대합니다.&quot;
             </p>
             <footer style={{ fontSize: 15, color: "#71767D", fontWeight: 600 }}>
               (주)이엠피 서비스 전략팀

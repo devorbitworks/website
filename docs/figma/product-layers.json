@@ -1,0 +1,374 @@
+{
+  "/assets/orbit-desktop-03.png": {
+    "background": "/assets/orbit-desktop-03-background.png",
+    "panel": "/assets/orbit-desktop-04-layer.png",
+    "originalPanel": "/assets/orbit-desktop-04.png",
+    "stage": {
+      "w": 1280,
+      "h": 440
+    },
+    "panelBox": {
+      "x": 52,
+      "y": 32,
+      "w": 370,
+      "h": 150,
+      "cornerRadius": 10,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 36,
+          "boundVariables": {},
+          "color": {
+            "r": 0.029999999329447746,
+            "g": 0.15000000596046448,
+            "b": 0.1599999964237213,
+            "a": 0.11999999731779099
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
+    },
+    "tags": []
+  },
+  "/assets/orbit-desktop-07.png": {
+    "background": "/assets/orbit-desktop-07-background.png",
+    "panel": "/assets/orbit-desktop-08-layer.png",
+    "originalPanel": "/assets/orbit-desktop-08.png",
+    "stage": {
+      "w": 760,
+      "h": 650
+    },
+    "panelBox": {
+      "x": 232,
+      "y": 172,
+      "w": 480,
+      "h": 394,
+      "cornerRadius": 10,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 36,
+          "boundVariables": {},
+          "color": {
+            "r": 0.029999999329447746,
+            "g": 0.15000000596046448,
+            "b": 0.1599999964237213,
+            "a": 0.11999999731779099
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
+    },
+    "tags": [
+      {
+        "x": 40,
+        "y": 32,
+        "w": 240,
+        "h": 32,
+        "text": "발송 상태 · 관할 정보",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "textFills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0941176488995552,
+              "g": 0.20392157137393951,
+              "b": 0.21960784494876862
+            },
+            "boundVariables": {}
+          }
+        ]
+      }
+    ]
+  },
+  "/assets/orbit-desktop-24.png": {
+    "background": "/assets/orbit-desktop-24-background.png",
+    "panel": "/assets/orbit-desktop-25-layer.png",
+    "originalPanel": "/assets/orbit-desktop-25.png",
+    "stage": {
+      "w": 720,
+      "h": 680
+    },
+    "panelBox": {
+      "x": 148,
+      "y": 234,
+      "w": 548,
+      "h": 216,
+      "cornerRadius": 10,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 36,
+          "boundVariables": {},
+          "color": {
+            "r": 0.029999999329447746,
+            "g": 0.15000000596046448,
+            "b": 0.1599999964237213,
+            "a": 0.14000000059604645
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
+    },
+    "tags": [
+      {
+        "x": 40,
+        "y": 34,
+        "w": 260,
+        "h": 32,
+        "text": "단지 배정 후 정보 연결",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "textFills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0941176488995552,
+              "g": 0.20392157137393951,
+              "b": 0.21960784494876862
+            },
+            "boundVariables": {}
+          }
+        ]
+      }
+    ]
+  },
+  "/assets/orbit-mobile-03.png": {
+    "background": "/assets/orbit-mobile-03-background.png",
+    "panel": "/assets/orbit-mobile-04-layer.png",
+    "originalPanel": "/assets/orbit-mobile-04.png",
+    "stage": {
+      "w": 342,
+      "h": 400
+    },
+    "panelBox": {
+      "x": 28,
+      "y": 24,
+      "w": 278,
+      "h": 126,
+      "cornerRadius": 10,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 36,
+          "boundVariables": {},
+          "color": {
+            "r": 0.029999999329447746,
+            "g": 0.15000000596046448,
+            "b": 0.1599999964237213,
+            "a": 0.11999999731779099
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
+    },
+    "tags": []
+  },
+  "/assets/orbit-mobile-07.png": {
+    "background": "/assets/orbit-mobile-07-background.png",
+    "panel": "/assets/orbit-mobile-08-layer.png",
+    "originalPanel": "/assets/orbit-mobile-08.png",
+    "stage": {
+      "w": 342,
+      "h": 460
+    },
+    "panelBox": {
+      "x": 76,
+      "y": 116,
+      "w": 242,
+      "h": 250,
+      "cornerRadius": 10,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 36,
+          "boundVariables": {},
+          "color": {
+            "r": 0.029999999329447746,
+            "g": 0.15000000596046448,
+            "b": 0.1599999964237213,
+            "a": 0.11999999731779099
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
+    },
+    "tags": [
+      {
+        "x": 22,
+        "y": 24,
+        "w": 220,
+        "h": 32,
+        "text": "발송 상태 · 관할 정보",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "textFills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0941176488995552,
+              "g": 0.20392157137393951,
+              "b": 0.21960784494876862
+            },
+            "boundVariables": {}
+          }
+        ]
+      }
+    ]
+  },
+  "/assets/orbit-mobile-24.png": {
+    "background": "/assets/orbit-mobile-24-background.png",
+    "panel": "/assets/orbit-mobile-25-layer.png",
+    "originalPanel": "/assets/orbit-mobile-25.png",
+    "stage": {
+      "w": 342,
+      "h": 400
+    },
+    "panelBox": {
+      "x": 24,
+      "y": 150,
+      "w": 294,
+      "h": 116,
+      "cornerRadius": 10,
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 36,
+          "boundVariables": {},
+          "color": {
+            "r": 0.029999999329447746,
+            "g": 0.15000000596046448,
+            "b": 0.1599999964237213,
+            "a": 0.14000000059604645
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
+    },
+    "tags": [
+      {
+        "x": 20,
+        "y": 24,
+        "w": 236,
+        "h": 32,
+        "text": "단지 배정 후 정보 연결",
+        "fills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1
+            },
+            "boundVariables": {}
+          }
+        ],
+        "textFills": [
+          {
+            "type": "SOLID",
+            "visible": true,
+            "opacity": 1,
+            "blendMode": "NORMAL",
+            "color": {
+              "r": 0.0941176488995552,
+              "g": 0.20392157137393951,
+              "b": 0.21960784494876862
+            },
+            "boundVariables": {}
+          }
+        ]
+      }
+    ]
+  }
+}
